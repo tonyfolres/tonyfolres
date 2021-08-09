@@ -1,13 +1,16 @@
 {
   "name": "simple-product-manager",
-  "author": "Thedath Oudary",
+  "homepage": "https://tonyfolres.github.io/tonyfolres/",
+  "author": "Camilus Fdo",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -56,6 +59,7 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.3.0"
+    "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.3"
   }
 }
